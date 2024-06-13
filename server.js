@@ -20,8 +20,8 @@ app.use("/api", home);
 app.use(errorMiddleware);
 
 app.get("/", (req, res) => {
-  app.use(express.static(path.resolve(__dirname, "frontend", "build")));
-  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+  app.use(express.static(path.resolve(__dirname, "client", "dist")));
+  res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
 });
 
 const PORT = process.env.PORT || 8080;
