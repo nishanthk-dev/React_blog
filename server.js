@@ -5,6 +5,7 @@ const home = require("./router/routes");
 const connectDB = require("./db");
 const errorMiddleware = require("./middlewares/error_middleware");
 const cors = require("cors");
+const path = require("path");
 const cookieParser = require("cookie-parser");
 const corsOptions = {
   origin: "http://localhost:5173",
