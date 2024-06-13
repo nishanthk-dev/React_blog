@@ -35,14 +35,14 @@ function App() {
           path: "/",
           element: <Homepg />,
         },
-        {
-          path: "/about",
-          element: <About />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
+        // {
+        //   path: "/about",
+        //   element: <About />,
+        // },
+        // {
+        //   path: "/contact",
+        //   element: <Contact />,
+        // },
         // {
         //   path: "/blogs",
         //   element: <Blogs />,
