@@ -7,7 +7,7 @@ const Homepg = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await fetch(`${window.location.origin}/api/allblogs`, {
+        const result = await fetch("https://react-blog-iota-flame.vercel.app/api/allblogs", {
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });

@@ -9,7 +9,7 @@ const Blogs = () => {
     const fetchData = async () => {
       try {
         const result = await fetch(
-          `${window.location.origin}/api/categorywiseBlog/${parameters}`,
+          `https://react-blog-iota-flame.vercel.app/api/categorywiseBlog/${parameters}`,
           {
             method: "GET",
             headers: { "Content-Type": "application/json" },

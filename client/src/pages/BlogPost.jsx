@@ -10,7 +10,7 @@ const BlogPost = () => {
     const fetchData = async () => {
       try {
         const result = await fetch(
-          `${window.location.origin}api/singleblog/${params.id}`,
+          `https://react-blog-iota-flame.vercel.app/api/singleblog/${params.id}`,
           {
             method: "GET",
             headers: {

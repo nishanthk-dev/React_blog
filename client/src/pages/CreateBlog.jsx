@@ -40,14 +40,17 @@ const CreateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`${window.location.origin}/api/create`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: userlogin.token,
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      `https://react-blog-iota-flame.vercel.app/api/create`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: userlogin.token,
+        },
+        body: JSON.stringify(data),
+      }
+    );
     setData({
       title: "",
       image: "",
